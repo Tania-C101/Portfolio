@@ -1,0 +1,177 @@
+*:not(.force-monospace) {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+}
+
+.home-background {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.typing-overlay {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  color: white;
+  line-height: 2.3rem;
+  font-size: 1.3rem;
+  white-space: pre-line; /* Keep pre-line for multi-line support */
+}
+
+.typewriter-text {
+  font-family: Courier !important;
+  position: relative;
+  display: inline-block;
+}
+
+.typewriter-text::after {
+  content: "|";
+  position: absolute;
+  right: -0.25em;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.horizontal-container,
+.horizontal-container-blue,
+.horizontal-container-black {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+
+.horizontal-cover {
+  display: flex;
+  width: 100%;
+  background-color: #4c0ee2;
+  height: 95vh;
+}
+
+.about-left {
+  display: left;
+  width: 30%;
+  height: 85%;
+  background-color: white;
+  border-radius: 20px;
+  margin: 3% 0% 4% 4%;
+}
+
+.about-right {
+  display: right;
+  width: 67%;
+  height: 85%;
+  background-color: white;
+  border-radius: 20px;
+  margin: 3% 4% 4% 4%;
+  padding: 2% 3% 3% 3%;
+}
+
+.profile-picture {
+  width: 55%;
+  height: 45%;
+  margin: 10% 3% 3% 3%;
+}
+
+.about-row {
+  display: flex;
+  margin: 0% 10% 0% 15%;
+}
+
+.about-para {
+  font-size: 12px;
+  line-height: 1.5rem;
+}
+
+.back-cover {
+  display: flex;
+  height: 115vh;
+  background-image: linear-gradient(rgb(166, 0, 250), rgb(40, 65, 229));
+  padding: 3%;
+}
+
+.back-left {
+  display: left;
+  width: 35%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.back-right {
+  display: right;
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.back-right-grid {
+  display: flex;
+  margin: -2%;
+}
+
+.back-left-col,
+.back-right-col {
+  width: 48%;
+}
+
+.back-left-col {
+  display: left;
+}
+
+.back-right-col {
+  display: right;
+}
+
+.back-right-row {
+  display: flex;
+  margin: 10% 5% -2% 25%;
+  text-align: left;
+}
+
+.progress-bar {
+  width: 900%;
+  height: 20px;
+  background-color: rgb(211, 211, 211);
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.horizontal-container-blue {
+  background-color: #84acfa;
+}
+
+.horizontal-container-black {
+  background-color: black;
+}
+
+.left {
+  display: left;
+  width: 48%;
+  margin: 4% 0% 4% 4%;
+}
+
+.right {
+  display: right;
+  width: 48%;
+  margin: 4% 4% 4% 4%;
+}
