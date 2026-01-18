@@ -1,8 +1,9 @@
 import './App.css';
 import '@fontsource/poppins'; // Defaults to weight 400
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'; // Only import Routes & Route
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 import NavBar from './nav/NavBar';
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,7 +14,7 @@ import Gallery from './pages/Gallery';
 
 function App() {
   return (
-    <Router>
+    <>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +24,7 @@ function App() {
         <Route path="/credentials" element={<Credentials />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
